@@ -14,7 +14,7 @@ cuboidSurf(){
 }
 }
 
-const cuboid = new CuboidMakerClass({
+const cuboidClass = new CuboidMakerClass({
   length: 4,
   width: 5,
   height: 5
@@ -38,8 +38,8 @@ const cuboidtwo = new CubeMaker({
   height: 5
 });
 
-console.log(cuboid.cuboidVol()); // 100
-console.log(cuboid.cuboidSurf()); // 130
+console.log(cuboidClass.cuboidVol()); // 100
+console.log(cuboidClass.cuboidSurf()); // 130
 console.log(cuboidtwo.CubeVol());
 console.log(cuboidtwo.CubeSurf());
 
