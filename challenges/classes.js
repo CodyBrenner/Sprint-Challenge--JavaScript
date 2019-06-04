@@ -1,5 +1,5 @@
 // 1. Copy and paste your prototype in here and refactor into class syntax.
-class CuboidMaker{
+class CuboidMakerClass{
   constructor(cubeAttr){
     this.length = cubeAttr.length;
     this.width = cubeAttr.width;
@@ -14,13 +14,13 @@ cuboidSurf(){
 }
 }
 
-const cuboid = new CuboidMaker({
+const cuboid = new CuboidMakerClass({
   length: 4,
   width: 5,
   height: 5
 });
 
-class CubeMaker extends CuboidMaker{
+class CubeMaker extends CuboidMakerClass{
   constructor(length, width, height){
   super(length, width, height)
   }
@@ -32,7 +32,11 @@ class CubeMaker extends CuboidMaker{
     return 6 * (this.length * this.length );
   }
 }
-const cuboidtwo = new CubeMaker(4,5,5);
+const cuboidtwo = new CubeMaker({
+  length: 4,
+  width: 5,
+  height: 5
+});
 
 console.log(cuboid.cuboidVol()); // 100
 console.log(cuboid.cuboidSurf()); // 130
